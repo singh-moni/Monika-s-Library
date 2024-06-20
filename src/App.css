@@ -5,3 +5,145 @@ body {
   background: url('./assets/pexels-birgit-held-392791-1046125.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+
+.App {
+  text-align: center;
+  color: white; /* Adjust text color to ensure readability */
+}
+
+.title {
+  margin: 20px;
+  font-size: 2.5rem;
+}
+
+.search--form {
+  width: 400px; /* Set a fixed width for the search form */
+  margin: 10px auto 0; /* Center the form horizontally */
+  padding: 0.2rem; /* Add padding inside the form */
+  display: flex;
+  justify-content: space-between; /* Space out the children elements */
+  align-items: center; /* Center align items vertically */
+  background-color: white; /* Set the background color */
+  border-radius: 999px; /* Make the form rounded */
+}
+
+.search--form > .search--bar {
+  width: 100%; /* Make the search bar take full width */
+  padding: 1rem; /* Add padding inside the search bar */
+  background: transparent; /* Set the background to transparent */
+  color: #000000; /* Set the text color */
+  border: none; /* Remove the border */
+  outline-width: 0; /* Remove the outline */
+}
+
+.search--form > .search--btn {
+  width: 35px; /* Set a fixed width for the button */
+  background: transparent; /* Set the background to transparent */
+  border: none; /* Remove the border */
+  cursor: pointer; /* Change the cursor to pointer on hover */
+}
+
+.search--form > .search--btn img {
+  width: 100%; /* Make the image take full width of the button */
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create a grid with three columns */
+  gap: 20px; /* Add space between the grid items */
+  padding: 10px; /* Add padding inside the books container */
+  justify-content: center; /* Center the grid items */
+}
+
+@media (max-width: 1200px) {
+  .books {
+    grid-template-columns: repeat(2, 1fr); /* Change to two columns on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .books {
+    grid-template-columns: 1fr; /* Change to one column on very small screens */
+  }
+}
+
+.book--item {
+  background: rgba(255, 255, 255, 0.3); /* Set a slightly transparent background */
+  padding: 5px; /* Add padding inside each book item */
+  border-radius: 5px; /* Round the corners */
+  text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center align children */
+  height: 100%; /* Ensure book items take full height */
+}
+
+.book--item img {
+  max-width: 100%; /* Make the image responsive */
+  border-radius: 5px; /* Round the corners of the image */
+  margin-bottom: 20px; /* Add space below the image */
+}
+
+.book--item-btns {
+  display: flex;
+  flex-direction: column; /* Arrange buttons in a column */
+  align-items: center; /* Center align buttons */
+  width: 100%; /* Make button container take full width */
+}
+
+.preview--btn,
+.read--btn {
+  
+  width: 50%; /* Make buttons take full width */
+  background-color: #4a90e2; /* Set button background color */
+  color: white; /* Set button text color */
+  padding: 15px; /* Increase padding inside buttons */
+  margin: 5px 0; /* Add vertical margin between buttons */
+  text-decoration: none; /* Remove underline from links */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Round the corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  text-align: center; /* Center align text */
+  font-size: 1.1rem; /* Increase font size for better readability */
+}
+
+.preview--btn:hover,
+.read--btn:hover {
+  background-color: #357ab7; /* Darken the background color on hover */
+}
+
+.null--point {
+  color: red; /* Set the text color for unavailable books */
+  margin: 5px 0; /* Add vertical margin */
+  text-align: center; /* Center align text */
+}
+
+.reading--block {
+  position: fixed; /* Fix the position */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: rgba(0, 0, 0, 0.8); /* Set a semi-transparent background */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center align horizontally */
+  align-items: center; /* Center align vertically */
+  flex-direction: column; /* Arrange in a column */
+}
+
+.close--btn {
+  background-color: red; /* Set background color */
+  color: white; /* Set text color */
+  padding: 10px; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make it circular */
+  cursor: pointer; /* Change cursor on hover */
+  position: absolute; /* Position absolutely */
+  top: 20px; /* Offset from top */
+  right: 20px; /* Offset from right */
+}
+
+.iframe {
+  width: 80%; /* Set iframe width */
+  height: 80%; /* Set iframe height */
+}

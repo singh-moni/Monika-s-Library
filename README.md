@@ -7,7 +7,7 @@ GitHub pages: https://singh-moni.github.io/Monika-s-Library/
 
 Features:
 Search for books using the Google Books API.
-Display search results in a grid layout with three books per row.
+Display search results in a grid layout with four books per row.
 View book details and preview books.
 Read books online if available.
 Responsive design that adjusts the layout for different screen sizes.

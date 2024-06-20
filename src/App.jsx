@@ -60,7 +60,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="title">Monika's library</h1>
+      <h1 className="title">Monika's Book Sanctuary</h1>
+      <quote>"In a world where you can be anything, be a reader. Welcome to our Book Sanctuary, where every page turns into a journey and every story feels like home."</quote>
 
       <SearchForm
         search={state.search}
